@@ -36,3 +36,93 @@ body {
     height: 200px;
     background: rgb(98, 226, 141);
 }
+
+/* Header */
+
+.header {
+    position: relative;
+    min-height: 940px;
+    padding-top: 44px;
+    color: #fff;
+
+    background: linear-gradient(132.05deg, #428E5F -17.38%, #112120 78.4%), #204434;
+}
+
+.header a {
+    color: #fff;
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 96px;
+
+    background-image: url("./../images/header/header-bottom.svg");
+    background-size: 100%;
+}
+
+.header__top {
+    margin-bottom: 86px;
+}
+
+.header__content {
+    max-width: 592px;
+}
+
+/* NAV */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 80px;
+}
+
+.nav__list {
+    display: flex;
+    column-gap: 80px;
+    font-style: 15px;
+    font-weight: 500;
+}
+
+.nav__list a {
+    position: relative;
+}
+
+.nav__list a.active::after,
+.nav__list a:hover::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    right: 10px;
+    bottom: -6px;
+
+    display: block;
+    /* width: 35px; */
+    height: 4px;
+    background-color: #c4c4c4;
+    border-radius: 50px;
+
+}
+
+.nav__login {
+}
+
+
+/* LOGO */
+
+
+
+.logo {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.logo a {
+    color: inherit;
+}
